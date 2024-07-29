@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "欢迎使用聊天应用程序",
+    "description": "一个简单的聊天应用程序。",
+    "register": "注册"
+  },
+  "register": {
+    "title": "注册",
+    "username": "用户名",
+    "submit": "注册"
+  },
+  "login": {
+    "title": "登录",
+    "username": "用户名",
+    "submit": "登录"
+  },
+  "sidebar": {
+    "title": "聊天",
+    "newChat": "新聊天"
+  },
+  "modal": {
+    "title": "开始新聊天",
+    "chatId": "输入用户ID",
+    "startChat": "开始聊天",
+    "cancel": "取消"
+  },
+  "send": "发送"
+}

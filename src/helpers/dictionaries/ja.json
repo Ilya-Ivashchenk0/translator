@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "チャットアプリへようこそ",
+    "description": "シンプルなチャットアプリケーション。",
+    "register": "登録"
+  },
+  "register": {
+    "title": "登録",
+    "username": "ユーザー名",
+    "submit": "登録"
+  },
+  "login": {
+    "title": "ログイン",
+    "username": "ユーザー名",
+    "submit": "ログイン"
+  },
+  "sidebar": {
+    "title": "チャット",
+    "newChat": "新しいチャット"
+  },
+  "modal": {
+    "title": "新しいチャットを開始",
+    "chatId": "ユーザーIDを入力",
+    "startChat": "チャットを開始",
+    "cancel": "キャンセル"
+  },
+  "send": "送信"
+}

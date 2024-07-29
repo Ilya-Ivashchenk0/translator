@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "채팅 앱에 오신 것을 환영합니다",
+    "description": "간단한 채팅 애플리케이션입니다.",
+    "register": "등록"
+  },
+  "register": {
+    "title": "등록",
+    "username": "사용자 이름",
+    "submit": "등록"
+  },
+  "login": {
+    "title": "로그인",
+    "username": "사용자 이름",
+    "submit": "로그인"
+  },
+  "sidebar": {
+    "title": "채팅",
+    "newChat": "새 채팅"
+  },
+  "modal": {
+    "title": "새 채팅 시작",
+    "chatId": "사용자 ID 입력",
+    "startChat": "채팅 시작",
+    "cancel": "취소"
+  },
+  "send": "보내기"
+}

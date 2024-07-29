@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "Selamat datang di Aplikasi Obrolan",
+    "description": "Aplikasi obrolan sederhana.",
+    "register": "Daftar"
+  },
+  "register": {
+    "title": "Daftar",
+    "username": "Nama pengguna",
+    "submit": "Daftar"
+  },
+  "login": {
+    "title": "Masuk",
+    "username": "Nama pengguna",
+    "submit": "Masuk"
+  },
+  "sidebar": {
+    "title": "Obrolan",
+    "newChat": "Obrolan baru"
+  },
+  "modal": {
+    "title": "Mulai Obrolan Baru",
+    "chatId": "Masukkan ID Pengguna",
+    "startChat": "Mulai Obrolan",
+    "cancel": "Batal"
+  },
+  "send": "Kirim"
+}

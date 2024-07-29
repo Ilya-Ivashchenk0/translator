@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "Bem-vindo ao Chat App",
+    "description": "Um aplicativo de chat simples.",
+    "register": "Registrar"
+  },
+  "register": {
+    "title": "Registrar",
+    "username": "Nome de usuário",
+    "submit": "Registrar"
+  },
+  "login": {
+    "title": "Entrar",
+    "username": "Nome de usuário",
+    "submit": "Entrar"
+  },
+  "sidebar": {
+    "title": "Chats",
+    "newChat": "Novo chat"
+  },
+  "modal": {
+    "title": "Iniciar novo chat",
+    "chatId": "Insira o ID do usuário",
+    "startChat": "Iniciar chat",
+    "cancel": "Cancelar"
+  },
+  "send": "Enviar"
+}

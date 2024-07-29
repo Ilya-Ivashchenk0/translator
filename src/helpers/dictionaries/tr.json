@@ -1,0 +1,28 @@
+{
+  "welcome": {
+    "title": "Sohbet Uygulamasına Hoş Geldiniz",
+    "description": "Basit bir sohbet uygulaması.",
+    "register": "Kayıt Ol"
+  },
+  "register": {
+    "title": "Kayıt Ol",
+    "username": "Kullanıcı Adı",
+    "submit": "Kayıt Ol"
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "username": "Kullanıcı Adı",
+    "submit": "Giriş Yap"
+  },
+  "sidebar": {
+    "title": "Sohbetler",
+    "newChat": "Yeni Sohbet"
+  },
+  "modal": {
+    "title": "Yeni Sohbet Başlat",
+    "chatId": "Kullanıcı Kimliğini Girin",
+    "startChat": "Sohbet Başlat",
+    "cancel": "İptal"
+  },
+  "send": "Gönder"
+}

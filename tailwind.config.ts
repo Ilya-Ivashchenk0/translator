@@ -10,9 +10,13 @@ const config: Config = {
       'secondary-text-color': '#FFFFFF',
       'action-color': '#ff5f00',
       'sender-color': '#00d2f5',
-      'recipient-color': '#fa5758'
+      'sender-bg-color': '#032231',
+      'recipient-color': '#fa5758',
+      'recipient-bg-color': '#441b1b'
     },
-    extend: {}
+    extend: {
+      backgroundImage: {}
+    }
   },
   plugins: []
 }

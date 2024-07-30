@@ -18,7 +18,7 @@ export const ChatBody: React.FC<chatBodyProps> = ({ chat, isOpenBar }) => {
   }
 
   return (
-    <div
+    <section
       className={`${isOpenBar ? 'min-w-[90%]' : 'w-3/4'} max-h-screen p-4 flex-1`}
     >
       <div className="bg-secondary-bg-color w-full h-full rounded-2xl flex flex-col pt-4">
@@ -33,7 +33,7 @@ export const ChatBody: React.FC<chatBodyProps> = ({ chat, isOpenBar }) => {
               </li>
             ))}
         </ul>
-        <div className="h-2/6 mx-4 mb-4 rounded bg-primary-bg-color">
+        <div className="h-1/4 mx-4 mb-4 rounded bg-primary-bg-color">
           <FormProvider {...methods}>
             <SendForm
               inputs={sandInputs}
@@ -42,6 +42,6 @@ export const ChatBody: React.FC<chatBodyProps> = ({ chat, isOpenBar }) => {
           </FormProvider>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

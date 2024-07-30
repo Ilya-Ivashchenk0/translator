@@ -30,9 +30,9 @@ export const signupInputs: inputTypes[] = [
     }
   },
   {
-    name: 'lastName',
+    name: 'nikeName',
     type: 'text',
-    label: 'Фамилия',
+    label: 'Никнейм',
     defaultValue: '',
     options: {
       pattern: {

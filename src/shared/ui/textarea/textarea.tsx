@@ -38,6 +38,7 @@ const Textarea: ForwardRefExoticComponent<textareaProps> = forwardRef<
       </label>
       <textarea
         ref={textareaRef}
+        id="textarea"
         value={value}
         onChange={
           onChange

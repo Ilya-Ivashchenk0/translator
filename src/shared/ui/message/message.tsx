@@ -23,7 +23,7 @@ export const Message: React.FC<messageProps> = ({ message, align }) => {
         className={`relative flex ${align === 'left' ? 'justify-start' : 'justify-end'}`}
       >
         <p
-          className={`bg-primary-bg-color relative max-w-[98%] z-10 rounded-md p-2 pb-5 text-md break-words whitespace-pre-wrap text-secondary-text-color ${align === 'left' ? 'text-left' : 'text-right'}`}
+          className={`relative max-w-[98%] z-10 rounded-md p-2 pb-5 text-md break-words whitespace-pre-wrap text-secondary-text-color ${align === 'left' ? 'text-left bg-sender-bg-color' : 'text-right bg-recipient-bg-color'}`}
         >
           {message.text}
           <span
@@ -33,7 +33,7 @@ export const Message: React.FC<messageProps> = ({ message, align }) => {
           </span>
         </p>
         <div
-          className={`bg-primary-bg-color w-4 h-4 absolute top-[-5px] ${align === 'left' ? 'left-[12px]' : 'right-[12px]'} rotate-45`}
+          className={`w-4 h-4 absolute top-[-5px] ${align === 'left' ? 'left-[12px] bg-sender-bg-color' : 'right-[12px] bg-recipient-bg-color'} rotate-45`}
         />
       </div>
     </div>

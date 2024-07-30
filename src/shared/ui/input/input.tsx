@@ -58,7 +58,12 @@ const Input: ForwardRefExoticComponent<InputProps> = forwardRef<
       </p>
 
       {type === 'password' && (
-        <Image onClick={togglePasswordVisibility} className='hover:brightness-75 absolute top-[25%] cursor-pointer right-1 w-7 h-7 p-[3px] bg-secondary-bg-color rounded-full' src={eye} alt='' />
+        <Image
+          onClick={togglePasswordVisibility}
+          className="hover:brightness-75 absolute top-[25%] cursor-pointer right-1 w-7 h-7 p-[3px] bg-secondary-bg-color rounded-full"
+          src={eye}
+          alt=""
+        />
       )}
 
       {label !== undefined && label !== '' && (

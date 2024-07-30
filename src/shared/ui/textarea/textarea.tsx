@@ -23,7 +23,7 @@ const Textarea: ForwardRefExoticComponent<textareaProps> = forwardRef<
 
   return (
     <div
-      className="w-full h-full px-4 py-2 rounded-sm bg-secondary-bg-color relative pb-12"
+      className="w-full h-full px-4 py-2 rounded-sm bg-secondary-bg-color relative pb-14"
       onClick={() => {
         if (textareaRef.current) {
           textareaRef.current.focus()

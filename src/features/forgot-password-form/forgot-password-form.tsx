@@ -1,35 +1,33 @@
-import { Controller, useFormContext } from 'react-hook-form'
-import { signupFromProps } from './types'
-import Link from 'next/link'
-import { Button } from '@/src/shared/ui/button'
 import { Input } from '@/src/shared/ui/input'
+import { forgotPasswordFormProps } from './types'
+import { Controller, useFormContext } from 'react-hook-form'
+import { Button } from '@/src/shared/ui/button'
+import Link from 'next/link'
 
-export const SignupForm: React.FC<signupFromProps> = ({
+export const ForgotPasswordForm: React.FC<forgotPasswordFormProps> = ({
   inputs,
-  pathname,
-  onSubmit,
-  className
+  onSubmit
 }) => {
   const {
-    watch,
     control,
+    watch,
     formState: { errors }
   } = useFormContext()
-  const allFields = watch()
-  const checkValuesAllFields = Object.values(allFields).every(field => !!field) // просмотр наличия значений сразу во всех полях
 
+  const allFields = watch()
+  const checkValuesAllFields = Object.values(allFields).every(field => !!field)
   return (
     <form
       className="bg-secondary-bg-color rounded p-6 flex flex-col gap-3 min-w-96"
       onSubmit={onSubmit}
     >
       <p className="flex justify-between text-primary-text-color">
-        Регистрация
+        Сброс пароля
         <Link
           className="text-secondary-text-color hover:text-primary-text-color underline"
-          href="/signin"
+          href="/"
         >
-          Войти
+          Главная
         </Link>
       </p>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -52,12 +50,14 @@ export const SignupForm: React.FC<signupFromProps> = ({
             />
           ))}
       </div>
-      <Button
-        type="submit"
-        disabled={Object.keys(errors).length > 0 || !checkValuesAllFields}
-      >
-        Зарегистрироваться
-      </Button>
+      <div className="w-full flex flex-col gap-4">
+        <Button
+          type="submit"
+          disabled={Object.keys(errors).length > 0 || !checkValuesAllFields}
+        >
+          <p>Сбросить пароль</p>
+        </Button>
+      </div>
     </form>
   )
 }

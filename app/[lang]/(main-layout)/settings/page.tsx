@@ -2,9 +2,9 @@ import { SettingsPage } from '@/src/pages-components/settings-page'
 
 const Settings: React.FC = () => {
   return (
-    <main>
+    <div>
       <SettingsPage />
-    </main>
+    </div>
   )
 }
 

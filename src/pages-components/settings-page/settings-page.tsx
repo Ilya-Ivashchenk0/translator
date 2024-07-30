@@ -1,3 +1,5 @@
+'use client'
+
 export const SettingsPage: React.FC = () => {
   return (
     <div>

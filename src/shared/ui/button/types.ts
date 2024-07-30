@@ -1,3 +1,4 @@
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
 
 export interface buttonProps
@@ -6,4 +7,5 @@ export interface buttonProps
     HTMLButtonElement
   > {
   variant?: 'full' | 'void'
+  icon?: string | StaticImport
 }

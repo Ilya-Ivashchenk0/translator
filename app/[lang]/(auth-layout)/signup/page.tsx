@@ -2,9 +2,9 @@ import { SignupPage } from '@/src/pages-components/signup-page'
 
 const Signup: React.FC = () => {
   return (
-    <div>
+    <main>
       <SignupPage />
-    </div>
+    </main>
   )
 }
 

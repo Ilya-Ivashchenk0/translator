@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Logo } from '@/src/shared/ui/logo'
 import left from '@/shared/images/for-chat-bar/left.svg'
+import options from '@/shared/images/for-chat-bar/options.svg'
 
 export const ChatBar: React.FC<chatBarProps> = ({
   chats,
@@ -42,9 +43,10 @@ export const ChatBar: React.FC<chatBarProps> = ({
           <hr className="min-w-[95%] border-primary-text-color" />
         </div>
         <Link
-          className="text-secondary-text-color bg-primary-bg-color p-2 rounded"
+          className="text-secondary-text-color bg-primary-bg-color p-2 rounded flex gap-2"
           href={'/settings'}
         >
+          <Image className="w-5 h-5" src={options} alt="" />
           Настройки
         </Link>
       </div>

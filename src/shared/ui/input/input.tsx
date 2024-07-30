@@ -4,6 +4,7 @@ import { forwardRef, ForwardRefExoticComponent, useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 import { InputProps } from './types'
 import eye from '@/shared/images/for-input/eye.svg'
+import eyeSlash from '@/shared/images/for-input/eye-slash.svg'
 import Image from 'next/image'
 
 const Input: ForwardRefExoticComponent<InputProps> = forwardRef<
@@ -61,7 +62,7 @@ const Input: ForwardRefExoticComponent<InputProps> = forwardRef<
         <Image
           onClick={togglePasswordVisibility}
           className="hover:brightness-75 absolute top-[25%] cursor-pointer right-1 w-7 h-7 p-[3px] bg-secondary-bg-color rounded-full"
-          src={eye}
+          src={inputType === 'password' ? eye : eyeSlash}
           alt=""
         />
       )}

@@ -2,9 +2,9 @@ import { SigninPage } from '@/src/pages-components/signin-page'
 
 const Signin: React.FC = () => {
   return (
-    <div>
+    <main>
       <SigninPage />
-    </div>
+    </main>
   )
 }
 

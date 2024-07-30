@@ -27,7 +27,7 @@ export const SigninForm: React.FC<signinFormProps> = ({
       onSubmit={onSubmit}
     >
       <p className="flex justify-between text-primary-text-color">
-        Вы здесь впервые?
+        Вход
         <Link
           className="text-secondary-text-color hover:text-primary-text-color underline"
           href="/signup"

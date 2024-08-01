@@ -88,4 +88,7 @@ export type Dictionary = {
     }
     submit: string
   }
+  postId: {
+    back: string
+  }
 }

@@ -1,10 +1,13 @@
 import { Locale } from '@/src/helpers/types'
 import { PostIdPage } from '@/src/pages-components/post-id-page'
 import img from '@/shared/images/for-logo/logo.png'
+import { getDictionary } from '../../../dictionaries'
 
 const PostId: React.FC<{
   params: { lang: Locale }
 }> = async ({ params: { lang } }) => {
+  const dict = await getDictionary(lang)
+
   const post = {
     id: '999',
     avatar: img,
@@ -13,9 +16,10 @@ const PostId: React.FC<{
     date: new Date('2024-01-05T14:30:00'),
     ovner: 'Администратор'
   }
+
   return (
     <main>
-      <PostIdPage post={post} />
+      <PostIdPage post={post} dict={dict} />
     </main>
   )
 }

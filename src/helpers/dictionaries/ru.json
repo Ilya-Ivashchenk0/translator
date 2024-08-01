@@ -70,5 +70,8 @@
       "url": "/forgot-password",
       "text": "Изменить пароль"
     }
+  },
+  "postId": {
+    "back": "Назад"
   }
 }

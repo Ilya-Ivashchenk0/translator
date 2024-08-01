@@ -16,7 +16,7 @@ export const HomePage: React.FC<homePageProps> = ({ dict, lang }) => {
       </h1>
       <div className="flex gap-12">
         <div className="flex flex-col gap-12">
-          <p className="bg-primary-bg-color rounded p-4 text-primary-text-color max-w-lg">
+          <p className="bg-primary-bg-color rounded p-4 text-secondary-text-color max-w-lg">
             {dict?.home.description}
           </p>
           <LanguageSelector

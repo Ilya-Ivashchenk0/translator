@@ -14,8 +14,6 @@ export const UserInfoDetails: React.FC<userInfoDetailsProps> = ({
           <p className="text-sm text-secondary-text-color">
             The internet&#39;s friendliest designer kid.
           </p>
-          <h3 className="text-xl text-primary-text-color">City</h3>
-          <span className="text-sm text-secondary-text-color">Krasnodar</span>
         </div>
         <div className="flex gap-8">
           <Button variant="full">0xc0E3...B79C</Button>

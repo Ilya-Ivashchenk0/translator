@@ -1,3 +1,5 @@
+import { Dictionary } from '@/src/helpers/types'
+
 export interface typeMessage {
   ownerId: string
   ownerName: string
@@ -11,6 +13,7 @@ interface typeChat {
 }
 
 export interface chatBodyProps {
+  dict: Dictionary
   isOpenBar: boolean
   chat: typeChat
 }

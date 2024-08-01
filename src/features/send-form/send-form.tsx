@@ -7,6 +7,7 @@ import send from '@/shared/images/for-send-form/send.svg'
 export const SendForm: React.FC<sendFormProps> = ({
   className,
   inputs,
+  submitText,
   onSubmit,
   ...otherProps
 }) => {
@@ -51,7 +52,7 @@ export const SendForm: React.FC<sendFormProps> = ({
           disabled={Object.keys(errors).length > 0}
           icon={send}
         >
-          Send
+          {submitText}
         </Button>
       </div>
     </form>

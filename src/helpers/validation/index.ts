@@ -1,2 +1,5 @@
 export { signupInputs } from './forms-options/signup-form'
 export { signinInputs } from './forms-options/signin-form'
+export { settingsInputs } from './forms-options/settings-form'
+export { sendInputs } from './forms-options/send-form'
+export { forgotPasswordInputs } from './forms-options/forgot-password-form'

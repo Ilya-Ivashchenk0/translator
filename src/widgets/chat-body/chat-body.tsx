@@ -2,13 +2,17 @@ import { Message } from '@/src/shared/ui/message'
 import { chatBodyProps } from './types'
 import { SendForm } from '@/features/send-form'
 import { FormProvider, useForm } from 'react-hook-form'
-import { sandInputs } from '@/src/helpers/validation/forms-options/send-form/send-form'
+import { sendInputs } from '@/src/helpers/validation/forms-options/send-form/send-form'
 
-export const ChatBody: React.FC<chatBodyProps> = ({ chat, isOpenBar }) => {
+export const ChatBody: React.FC<chatBodyProps> = ({
+  chat,
+  isOpenBar,
+  dict
+}) => {
   const myId = '1'
   const methods = useForm({
     defaultValues: Object.fromEntries(
-      sandInputs.map(input => [input.name, input.defaultValue])
+      sendInputs.map(input => [input.name, input.defaultValue])
     ),
     mode: 'onBlur'
   })
@@ -36,7 +40,8 @@ export const ChatBody: React.FC<chatBodyProps> = ({ chat, isOpenBar }) => {
         <div className="h-1/4 mx-4 mb-4 rounded bg-primary-bg-color">
           <FormProvider {...methods}>
             <SendForm
-              inputs={sandInputs}
+              submitText={dict.dashboard.body.send}
+              inputs={sendInputs}
               onSubmit={methods.handleSubmit(onSubmit)}
             />
           </FormProvider>

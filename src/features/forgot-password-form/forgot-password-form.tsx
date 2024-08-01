@@ -6,6 +6,9 @@ import Link from 'next/link'
 
 export const ForgotPasswordForm: React.FC<forgotPasswordFormProps> = ({
   inputs,
+  title,
+  link,
+  submit,
   onSubmit
 }) => {
   const {
@@ -16,18 +19,19 @@ export const ForgotPasswordForm: React.FC<forgotPasswordFormProps> = ({
 
   const allFields = watch()
   const checkValuesAllFields = Object.values(allFields).every(field => !!field)
+
   return (
     <form
       className="bg-secondary-bg-color rounded p-6 flex flex-col gap-3 min-w-96"
       onSubmit={onSubmit}
     >
       <p className="flex justify-between text-primary-text-color">
-        Сброс пароля
+        {title}
         <Link
           className="text-secondary-text-color hover:text-primary-text-color underline"
-          href="/"
+          href={link.url}
         >
-          Главная
+          {link.text}
         </Link>
       </p>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -55,7 +59,7 @@ export const ForgotPasswordForm: React.FC<forgotPasswordFormProps> = ({
           type="submit"
           disabled={Object.keys(errors).length > 0 || !checkValuesAllFields}
         >
-          <p>Сбросить пароль</p>
+          {submit}
         </Button>
       </div>
     </form>

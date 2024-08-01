@@ -3,8 +3,9 @@
 import { useState } from 'react'
 import { ChatBar } from '@/src/widgets/chat-bar'
 import { ChatBody } from '@/src/widgets/chat-body'
+import { dashboardPageProps } from './types'
 
-export const DashboardPage: React.FC = () => {
+export const DashboardPage: React.FC<dashboardPageProps> = ({ dict }) => {
   const [isOpenBar, setOpenBar] = useState<boolean>(false)
 
   const toggleBar = (): void => {
@@ -15,8 +16,14 @@ export const DashboardPage: React.FC = () => {
 
   return (
     <div className="flex">
-      <ChatBar chats={[]} isOpenBar={isOpenBar} toggleBar={toggleBar} />
+      <ChatBar
+        dict={dict}
+        chats={[]}
+        isOpenBar={isOpenBar}
+        toggleBar={toggleBar}
+      />
       <ChatBody
+        dict={dict}
         chat={{
           owners: ['111', '222'],
           messages: [

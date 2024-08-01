@@ -1,7 +1,7 @@
-import { EMAIL_MESSAGE, REQUIRED_MESSAGE } from '../../error-messages'
+import { REQUIRED_MESSAGE } from '../../error-messages'
 import { textareaTypes } from '../../types'
 
-export const sandInputs: textareaTypes[] = [
+export const sendInputs: textareaTypes[] = [
   {
     name: 'text',
     label: 'Message',

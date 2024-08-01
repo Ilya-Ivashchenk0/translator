@@ -7,9 +7,9 @@ import { Input } from '@/src/shared/ui/input'
 export const SigninForm: React.FC<signinFormProps> = ({
   className,
   inputs,
+  dict,
   pathname,
   onSubmit,
-  recoveryLinkUrl,
   ...otherProps
 }) => {
   const {
@@ -27,12 +27,12 @@ export const SigninForm: React.FC<signinFormProps> = ({
       onSubmit={onSubmit}
     >
       <p className="flex justify-between text-primary-text-color">
-        Вход
+        {dict.signin.title}
         <Link
           className="text-secondary-text-color hover:text-primary-text-color underline"
-          href="/signup"
+          href={dict.signin.signupLink.url}
         >
-          Регистрация
+          {dict.signin.signupLink.text}
         </Link>
       </p>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -58,15 +58,15 @@ export const SigninForm: React.FC<signinFormProps> = ({
       <div className="w-full flex flex-col gap-4">
         <Link
           className="w-full flex justify-end text-secondary-text-color hover:text-primary-text-color"
-          href={recoveryLinkUrl}
+          href={dict.signin.forgotLink.url}
         >
-          Забыли пароль?
+          {dict.signin.forgotLink.text}
         </Link>
         <Button
           type="submit"
           disabled={Object.keys(errors).length > 0 || !checkValuesAllFields}
         >
-          <p>Войти</p>
+          {dict.signin.submit}
         </Button>
       </div>
     </form>

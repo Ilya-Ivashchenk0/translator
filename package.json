@@ -12,13 +12,17 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@reduxjs/toolkit": "^2.2.7",
     "@types/negotiator": "^0.6.3",
+    "classnames": "^2.5.1",
+    "loader-utils": "^3.3.1",
     "negotiator": "^0.6.3",
     "next": "14.2.5",
-    "next-international": "^1.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.52.1"
+    "react-hook-form": "^7.52.1",
+    "react-redux": "^9.1.2",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20",

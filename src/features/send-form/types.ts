@@ -4,6 +4,7 @@ import { DetailedHTMLProps, HTMLAttributes } from 'react'
 export interface sendFormProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLFormElement>, HTMLFormElement> {
   inputs: textareaTypes[]
+  submitText: string
   onSubmit: (
     e?: React.BaseSyntheticEvent<object, any, any> | undefined
   ) => Promise<void>

@@ -10,6 +10,7 @@ import options from '@/shared/images/for-chat-bar/options.svg'
 
 export const ChatBar: React.FC<chatBarProps> = ({
   chats,
+  dict,
   isOpenBar,
   toggleBar
 }) => {
@@ -43,11 +44,11 @@ export const ChatBar: React.FC<chatBarProps> = ({
           <hr className="min-w-[95%] border-primary-text-color" />
         </div>
         <Link
-          className="text-secondary-text-color bg-primary-bg-color p-2 rounded flex gap-2"
+          className="text-secondary-text-color bg-primary-bg-color p-2 rounded flex items-center gap-2"
           href={'/settings'}
         >
           <Image className="w-5 h-5" src={options} alt="" />
-          Настройки
+          {dict.dashboard.bar.settings}
         </Link>
       </div>
       <div

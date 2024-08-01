@@ -1,1 +1,1 @@
-export { sandInputs } from './send-form'
+export { sendInputs } from './send-form'

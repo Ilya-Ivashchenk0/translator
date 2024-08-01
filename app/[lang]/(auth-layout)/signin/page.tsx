@@ -1,10 +1,15 @@
+import { Locale } from '@/src/helpers/types'
 import { SigninPage } from '@/src/pages-components/signin-page'
+import { getDictionary } from '../../dictionaries'
 
-const Signin: React.FC = () => {
+const Signin: React.FC<{
+  params: { lang: Locale }
+}> = async ({ params: { lang } }) => {
+  const dict = await getDictionary(lang)
   return (
-    <main>
-      <SigninPage />
-    </main>
+    <div>
+      <SigninPage dict={dict} />
+    </div>
   )
 }
 

@@ -6,6 +6,7 @@ import { Input } from '@/src/shared/ui/input'
 
 export const SignupForm: React.FC<signupFromProps> = ({
   inputs,
+  dict,
   pathname,
   onSubmit,
   className
@@ -16,7 +17,7 @@ export const SignupForm: React.FC<signupFromProps> = ({
     formState: { errors }
   } = useFormContext()
   const allFields = watch()
-  const checkValuesAllFields = Object.values(allFields).every(field => !!field) // просмотр наличия значений сразу во всех полях
+  const checkValuesAllFields = Object.values(allFields).every(field => !!field)
 
   return (
     <form
@@ -24,12 +25,12 @@ export const SignupForm: React.FC<signupFromProps> = ({
       onSubmit={onSubmit}
     >
       <p className="flex justify-between text-primary-text-color">
-        Регистрация
+        {dict?.signup.title}
         <Link
           className="text-secondary-text-color hover:text-primary-text-color underline"
-          href="/signin"
+          href={dict.signup.signinLink.url}
         >
-          Войти
+          {dict.signup.signinLink.text}
         </Link>
       </p>
       <div className="flex flex-col justify-center items-center gap-4">
@@ -56,7 +57,7 @@ export const SignupForm: React.FC<signupFromProps> = ({
         type="submit"
         disabled={Object.keys(errors).length > 0 || !checkValuesAllFields}
       >
-        Зарегистрироваться
+        {dict.signup.submit}
       </Button>
     </form>
   )
